@@ -1,0 +1,16 @@
+@inproceedings{Anokhin_2020_CVPR,
+  author = {Anokhin, Ivan and
+            Solovev, Pavel and
+            Korzhenkov, Denis and
+            Kharlamov, Alexey and
+            Khakhulin, Taras and
+            Sterkin, Gleb and
+            Silvestrov, Alexey and
+            Nikolenko, Sergey and
+            Lempitsky, Victor
+  },
+  title = {High-Resolution Daytime Translation Without Domain Labels},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2020},
+}

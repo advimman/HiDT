@@ -1,0 +1,41 @@
+body {
+  font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight:700
+}
+header.masthead {
+  position:relative;
+  background-color:#93d7f5;
+  background no-repeat center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  padding-top:8rem;
+  padding-bottom:8rem
+}
+header.masthead .overlay{
+  position:absolute;
+  background-color:#212529;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  opacity:.3
+}
+header.masthead h1 {
+  font-size:2rem
+}
+@media (min-width:768px) {
+  header.masthead {
+    padding-top:4rem;
+    padding-bottom:2rem
+  }
+  header.masthead h1 {
+    font-size:3rem
+  }
+}
+.showcase
+.showcase-text{padding:3rem}.showcase .showcase-img{min-height:30rem;background-size:cover}@media (min-width:768px){.showcase .showcase-text{padding:7rem}}.features-icons{padding-top:0rem;padding-bottom:2rem}.features-icons .features-icons-item{max-width:20rem}.features-icons .features-icons-item .features-icons-icon{height:7rem}.features-icons .features-icons-item .features-icons-icon i{font-size:3rem}.features-icons .features-icons-item:hover .features-icons-icon i{font-size:3.5rem}.testimonials{padding-top:2rem;padding-bottom:0rem}.testimonials .testimonial-item{max-width:18rem}.testimonials .testimonial-item img{max-width:8rem;box-shadow:0 5px 5px 0 #adb5bd}.call-to-action{position:relative;background-color:#343a40;background:url(../img/bg-masthead.jpg) no-repeat center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding-top:7rem;padding-bottom:7rem}.call-to-action .overlay{position:absolute;background-color:#212529;height:100%;width:100%;top:0;left:0;opacity:.3}footer.footer{padding-top:1.5rem;padding-bottom:1.5rem} .myrow{padding-top:2rem;padding-bottom:0.5rem} .myp{padding-bottom:2rem} .mybib-out{position:absolute;top:20%;background-color:none;margin-top:0.4rem;margin-bottom:1rem} .mybib-in{padding-top:0.8rem;padding-bottom:0.8rem} .mylead{font-size:1rem;font-weight:400;} .mylead2{font-size:1.1rem;font-weight:400;} .padtop{padding-top:1rem} .zeromargin{margin:0rem;} .footer-text{color:#6c757d;font-size:1.2rem;font-weight:400;} .footer-icon{font-size:1.4rem}
