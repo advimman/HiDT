@@ -8,6 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
     <title>High-Resolution Daytime Translation Without Domain Labels</title>
 
     <!-- Bootstrap core CSS -->
@@ -234,8 +245,8 @@
             <div class="offset-lg-1 col-lg-10">
                 <h4>Translation Network</h4>
                 <p class="lead mb-0" align="justify">
-                  The HiDT model aims to extract independent encodings of  content <b>c</b>  and  style <b>s</b> from  an  input  image <b>x</b>
-                  by  using  its own architectural bias, with no explicit supervision from the training set,  and then construct
+                  The HiDT model aims to extract independent encodings of  content $c$ and  style $s$ from  an  input  image $x$
+                  by  using  its own architectural bias, with no explicit supervision from the training set,  and then to construct
                   images with new content-style  combinations.
 
                   To create a plausible daytime landscape image, the model should preserve details from the original image.
@@ -261,10 +272,10 @@
                 Training a network which can effectively operate with high resolution images is difficult
                 due to the hardware constraints in both memory and computation time.
                 Inspired by existing multiframe image restoration methods, we propose to use a separate
-                enhancement network to upscale the translated image and simultaneously remove the artifacts
-                that are typical for the trained and frozen generator.
-                Therefore, the input is split into subimages (color-coded), translated individually by HiDT
-                at medium resolution and then merged together.
+                enhancement pipeline to upscale the translated image and simultaneously remove the artifacts
+                that are typical for the trained and frozen translation net.
+                Therefore, the input is split into subimages (color-coded in the scheme below), that are processed
+                individually by HiDT at medium resolution and then merged together with $G_{enh}$ network.
                 </p>
             </div>
         </div>
