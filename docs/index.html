@@ -182,7 +182,7 @@
         </div>
 
         <div class="col-lg-2">
-          <a href="https://github.com/MDAL-SAIC-M/HiDT" style="text-decoration : none; color : #000000;">
+          <a href="https://github.com/saic-mdal/HiDT" style="text-decoration : none; color : #000000;">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="fa fa-github-square m-auto text-primary"></i>
@@ -244,9 +244,9 @@
       </div>
 
       <center>
-          <div class="row iframe-container col-lg-10">
-            <iframe src="https://www.youtube.com/embed/JTu-U0C4xEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        <div class="row iframe-container col-lg-10">
+          <iframe src="https://www.youtube.com/embed/JTu-U0C4xEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </center>
 
 
@@ -323,10 +323,10 @@
               <div class="my_table_cell">
                 <img src="img/4_swap_grid.png" style="width:100%;" align="middle">
                 <p class="lead mb-0" align='justify'>
-                  Visualization of swapping styles between two images.
-                  Original images are shown on the main diagonal.
-                  The examples show that HiDT is capable to swap the styles between
-                  two real images while preserving details.
+                  Swapping styles between two images.
+                  Original images are shown on the main diagonal, and off-diagonal images
+                  correspond to swaps.
+                  Swapping successfully combines both content and style from two input images into naturally-looking photographs.
               </div>
               <div class="my_table_cell">
                 <img src="img/5_random_grid.png" style="width:100%;" align="middle">
@@ -339,24 +339,66 @@
         </div>
       </center>
 
+      <br><br>
+
+      <div>
+        <center>
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+              <img class="img-fluid mb-3" src="img/10_interpolation_cloudy_clear.jpg" alt="" width="1080px">
+              <p class="lead mb-0" align='justify'>
+                Interpolation between cloudy and clear sky.
+            </div>
+          </div>
+      </div>
+
+      <br><br>
+
+      <div>
+        <center>
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+              <img class="img-fluid mb-3" src="img/11_interpolation_sunset_night.jpg" alt="" width="1080px">
+              <p class="lead mb-0" align='justify'>
+                Interpolation between dusk and sunset.
+            </div>
+          </div>
+      </div>
+
       <div class="row myrow">
         <div class="offset-lg-1 col-lg-10">
           <h4>Artworks</h4>
         </div>
       </div>
+
+      <div>
+        <center>
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+              <img class="img-fluid mb-3" src="img/12_interpolation_art_dusk_sunset.jpg" alt="" width="1080px">
+              <p class="lead mb-0" align='justify'>
+                Linear interpolation between two extracted styles (lighting conditions) by the HiDT model,
+                trained on our <i>dataset of landscape photos</i>.
+                The leftmost column contains artworks in realism style.
+            </div>
+          </div>
+      </div>
+
       <center>
         <div class="container">
           <div class="row myrow">
             <div class="offset-lg-1 col-lg-10">
               <div class="my_table_cell">
                 <img src="img/6_art_grid_one.png" style="width:100%;" align="middle">
-                <p class="lead mb-0" align='justify'>
-                  Some words here
               </div>
               <div class="my_table_cell">
                 <img src="img/7_art_grid_two.png" style="width:100%;" align="middle">
-                <p class="lead mb-0" align='justify'>
-                  Some words here too
+              </div>
+              <div>
+                <p class="lead mb-0" align="justify">
+                  Perhaps surprisingly, HiDT model, trained on a <i>dataset of paintings</i>, is capable of artistic style transfer as well.
+                  Original images are shown on the main diagonal.
+                </p>
               </div>
             </div>
           </div>
@@ -364,6 +406,7 @@
       </center>
 
       <br><br>
+
 
       <br><br>
 
@@ -416,7 +459,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://github.com/MDAL-SAIC-M/HiDT" class="footer-icon">
+              <a href="https://github.com/saic-mdal/HiDT" class="footer-icon">
                 <i class="fa fa-git"></i>
               </a>
             </li>
