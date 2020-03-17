@@ -1,2 +1,3 @@
 # HiDT
-High-Resolution Daytime Translation Without Domain Labels
+Code will be released soon. Stay tuned!
+
