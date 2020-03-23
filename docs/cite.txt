@@ -4,10 +4,10 @@
             Korzhenkov, Denis and
             Kharlamov, Alexey and
             Khakhulin, Taras and
-            Sterkin, Gleb and
             Silvestrov, Alexey and
             Nikolenko, Sergey and
-            Lempitsky, Victor
+            Lempitsky, Victor and
+            Sterkin, Gleb
   },
   title = {High-Resolution Daytime Translation Without Domain Labels},
   booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
