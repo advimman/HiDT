@@ -1,0 +1,77 @@
+trainer: TrainerBase
+
+# data types params
+data_types:
+  <<: &type_images
+    images:
+      color_space: rgb
+      dim: 3
+      type: style
+  <<: &type_segmentation_maps
+    segmentation_maps:
+      color_space: rgb
+      dim: 3
+      type: content
+
+# model options
+models:
+  gen:
+    architecture: GeneratorContentStyleUnet
+    initialization: kaiming
+    optimizer_group: generator
+    modules:
+      content_encoder:
+        input_data:
+          <<: *type_images
+        architecture: ContentEncoderUnet
+        num_downsamples: 2
+        num_blocks: 4
+        dim: 48
+        norm: in
+        activ: relu
+        pad_type: reflect
+        skip_dim: 5
+      style_encoder:
+        architecture: StyleEncoder
+        num_downsamples: 4
+        dim: 48
+        input_data:
+          <<: *type_images
+        output_dim: 3
+        norm: none
+        activ: lrelu
+        pad_type: reflect
+      decoder:
+        architecture: DecoderUnet
+        res_norm: adain
+        up_norm: ln
+        num_upsamples: 2
+        num_blocks: 5
+        dim: 192
+        activ: relu
+        pad_type: reflect
+        num_res_conv: 0
+        skip_dim: 5
+        output_data:
+          <<: *type_images
+          <<: *type_segmentation_maps
+        adain_net:
+          architecture: MLP
+          input_dim: 3
+          dim: 64
+          num_blocks: 3
+          norm: none
+          activ: relu
+
+
+# data options
+test_dataset:
+  data:
+    <<: *type_images
+  transform:
+    preprocess: scale_shorter_side_and_crop
+    load_size: 256                             # first resize the shortest image side to this size
+    crop_image_height: 256                    # random crop image of this height
+    crop_image_width: 256                     # random crop image of this width
+    no_flip: False
+    dequantization: True

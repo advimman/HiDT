@@ -1,0 +1,6 @@
+PyYAML
+pillow == 6.2.1
+numpy
+torch == 1.1
+torchvision == 0.3.0
+tqdm
