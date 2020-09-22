@@ -1,6 +1,8 @@
 import argparse
 import glob
 import os
+import sys
+sys.path.append('.')
 
 import torch
 from torchvision import transforms
